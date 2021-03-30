@@ -17,14 +17,13 @@ struct ContentView: View {
         ZStack {
             Color(.black)
                 .edgesIgnoringSafeArea(.all)
-            VStack {
+            VStack(spacing: 20) {
                 ColorView(value: Color(
                             .sRGB,
                             red: redValue / 255,
                             green: greenValue / 255,
                             blue: blueValue / 255)
                 )
-                
                 SingleColorSlider(value: $redValue, accentColor: .red)
                 SingleColorSlider(value: $greenValue, accentColor: .green)
                 SingleColorSlider(value: $blueValue, accentColor: .blue)
