@@ -13,7 +13,7 @@ struct SingleColorSlider: View {
     
     @State private var alertPresented = false
     @State private var isEditing = false
-    
+        
     var accentColor: Color = .blue
     
     var body: some View {

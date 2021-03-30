@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var redValue: Double = 5
-    @State private var greenValue: Double = 125
-    @State private var blueValue: Double = 250
+    @State private var redValue: Double = Double.random(in: 0...255)
+    @State private var greenValue: Double = Double.random(in: 0...255)
+    @State private var blueValue: Double = Double.random(in: 0...255)
     
     var body: some View {
         ZStack {
@@ -29,8 +29,10 @@ struct ContentView: View {
                 SingleColorSlider(value: $blueValue, accentColor: .blue)
                 Spacer(minLength: 100)
             }.padding()
+            
         }
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
