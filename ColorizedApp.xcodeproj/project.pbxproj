@@ -11,8 +11,9 @@
 		7C13A66026110BD2002331E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C13A65F26110BD2002331E0 /* ContentView.swift */; };
 		7C13A66226110BD6002331E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C13A66126110BD6002331E0 /* Assets.xcassets */; };
 		7C13A66526110BD6002331E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C13A66426110BD6002331E0 /* Preview Assets.xcassets */; };
+		7C5DE2562613E2C900228407 /* KeyboardExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C5DE2552613E2C900228407 /* KeyboardExt.swift */; };
 		7C8913DB26125B9A002A3ABA /* ColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8913DA26125B9A002A3ABA /* ColorView.swift */; };
-		7C8913DF26125E28002A3ABA /* SingleColorSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8913DE26125E28002A3ABA /* SingleColorSlider.swift */; };
+		7C8913DF26125E28002A3ABA /* SingleColorUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C8913DE26125E28002A3ABA /* SingleColorUnit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,8 +23,9 @@
 		7C13A66126110BD6002331E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C13A66426110BD6002331E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		7C13A66626110BD6002331E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5DE2552613E2C900228407 /* KeyboardExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardExt.swift; sourceTree = "<group>"; };
 		7C8913DA26125B9A002A3ABA /* ColorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorView.swift; sourceTree = "<group>"; };
-		7C8913DE26125E28002A3ABA /* SingleColorSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleColorSlider.swift; sourceTree = "<group>"; };
+		7C8913DE26125E28002A3ABA /* SingleColorUnit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleColorUnit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +60,9 @@
 			children = (
 				7C13A65D26110BD2002331E0 /* ColorizedAppApp.swift */,
 				7C13A65F26110BD2002331E0 /* ContentView.swift */,
-				7C8913DE26125E28002A3ABA /* SingleColorSlider.swift */,
+				7C8913DE26125E28002A3ABA /* SingleColorUnit.swift */,
 				7C8913DA26125B9A002A3ABA /* ColorView.swift */,
+				7C5DE2552613E2C900228407 /* KeyboardExt.swift */,
 				7C13A66126110BD6002331E0 /* Assets.xcassets */,
 				7C13A66626110BD6002331E0 /* Info.plist */,
 				7C13A66326110BD6002331E0 /* Preview Content */,
@@ -146,7 +149,8 @@
 			files = (
 				7C8913DB26125B9A002A3ABA /* ColorView.swift in Sources */,
 				7C13A66026110BD2002331E0 /* ContentView.swift in Sources */,
-				7C8913DF26125E28002A3ABA /* SingleColorSlider.swift in Sources */,
+				7C5DE2562613E2C900228407 /* KeyboardExt.swift in Sources */,
+				7C8913DF26125E28002A3ABA /* SingleColorUnit.swift in Sources */,
 				7C13A65E26110BD2002331E0 /* ColorizedAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

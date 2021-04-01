@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct SingleColorSlider: View {
+struct SingleColorUnit: View {
     
     @Binding var value: Double
     
@@ -34,6 +34,7 @@ struct SingleColorSlider: View {
                       formatter: NumberFormatter(),
                       onEditingChanged: { editing in isEditing = editing },
                       onCommit: { validate() })
+                //            .keyboardType(UIKeyboardType.phonePad)
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .foregroundColor(isEditing ? .red : .blue)
                 .frame(width: 50)
@@ -47,6 +48,7 @@ struct SingleColorSlider: View {
     }
     
     private func validate() {
+        hideKeyboard()
         if !(0...255).contains(value) {
             value = 255
             alertPresented.toggle()
@@ -56,8 +58,14 @@ struct SingleColorSlider: View {
     
 }
 
+extension View {
+    func hideKeyboard() {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+    }
+}
+
 struct SingleColorSlider_Previews: PreviewProvider {
     static var previews: some View {
-        SingleColorSlider(value: .constant(50), accentColor: .red)
+        SingleColorUnit(value: .constant(50), accentColor: .red)
     }
 }

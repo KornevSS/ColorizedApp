@@ -9,24 +9,19 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @State private var redValue: Double = Double.random(in: 0...255)
-    @State private var greenValue: Double = Double.random(in: 0...255)
-    @State private var blueValue: Double = Double.random(in: 0...255)
+    @State private var redColor: Double = Double.random(in: 0...255)
+    @State private var greenColor: Double = Double.random(in: 0...255)
+    @State private var blueColor: Double = Double.random(in: 0...255)
     
     var body: some View {
         ZStack {
             Color(.black)
                 .edgesIgnoringSafeArea(.all)
             VStack(spacing: 20) {
-                ColorView(value: Color(
-                            .sRGB,
-                            red: redValue / 255,
-                            green: greenValue / 255,
-                            blue: blueValue / 255)
-                )
-                SingleColorSlider(value: $redValue, accentColor: .red)
-                SingleColorSlider(value: $greenValue, accentColor: .green)
-                SingleColorSlider(value: $blueValue, accentColor: .blue)
+                ColorView(rComponent: redColor, gComponent: greenColor, bComponent: blueColor)
+                SingleColorUnit(value: $redColor, accentColor: .red)
+                SingleColorUnit(value: $greenColor, accentColor: .green)
+                SingleColorUnit(value: $blueColor, accentColor: .blue)
                 Spacer(minLength: 100)
             }.padding()
             
